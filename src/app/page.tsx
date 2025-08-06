@@ -2,6 +2,7 @@ import { NavbarDemo } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { BackgroundGradientCard } from "@/components/FeaturedCourses";
 import { StickyScrollReveal } from "@/components/ScrollView";
+import { InfiniteMovingCardsComponent } from "@/components/InfiniteMovingCards";
 
 export default function Home() {
    return (
@@ -11,6 +12,7 @@ export default function Home() {
          <HeroSection />
          <BackgroundGradientCard />
          <StickyScrollReveal />
+         <InfiniteMovingCardsComponent />
       </div>
    );
 }
