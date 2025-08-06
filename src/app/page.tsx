@@ -1,5 +1,6 @@
 import { NavbarDemo } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { BackgroundGradientCard } from "@/components/FeaturedCourses";
 
 export default function Home() {
    return (
@@ -7,6 +8,7 @@ export default function Home() {
          {/* Floating Navbar */}
          <NavbarDemo />
          <HeroSection />
+         <BackgroundGradientCard />
       </div>
    );
 }

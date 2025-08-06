@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Spotlight } from "./ui/spotlight-new";
+import { Button } from "../components/ui/moving-border";
 
 export function HeroSection() {
    return (
@@ -15,12 +16,12 @@ export function HeroSection() {
             </p>
 
             <div className="mt-6">
-               <Link
-                  href="/courses"
-                  className="inline-block px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg text-lg font-semibold transition-all duration-300 shadow-md"
+               <Button
+                  borderRadius="1.75rem"
+                  className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
                >
                   Explore Courses
-               </Link>
+               </Button>
             </div>
          </div>
       </div>
