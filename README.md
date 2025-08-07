@@ -50,7 +50,7 @@ To get a local copy up and running, follow these simple steps.
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/HAMZOO0/NextAnimate.git
-   
+
    cd next-project-management
    ```
 
@@ -110,3 +110,4 @@ The project relies on several key dependencies:
 
 We welcome contributions! Please feel free to submit a Pull Request.
 
+ 
