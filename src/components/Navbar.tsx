@@ -22,49 +22,20 @@ function Navbar({ className }: { className?: string }) {
                <MenuItem setActive={setActive} active={active} item="Home"></MenuItem>
             </Link>
 
-            <MenuItem setActive={setActive} active={active} item="Our Courses">
+            <MenuItem setActive={setActive} active={active} item="Features">
                <div className="flex flex-col space-y-4 text-sm">
-                  <HoveredLink href="/courses">All Courses</HoveredLink>
-                  <HoveredLink href="/music-thoery">Basic Music Theory</HoveredLink>
-                  <HoveredLink href="/Composition">Advance Composition</HoveredLink>
-                  <HoveredLink href="/song-writting">Song Writting</HoveredLink>
-                  <HoveredLink href="/music-prodcution">Music Production</HoveredLink>
+                  <HoveredLink href="/features">All Features</HoveredLink>
+                  <HoveredLink href="/features/task-management">Task Management</HoveredLink>
+                  <HoveredLink href="/features/client-communication">Client Communication</HoveredLink>
+                  <HoveredLink href="/features/file-sharing">File Sharing</HoveredLink>
+                  <HoveredLink href="/features/time-tracking">Time Tracking</HoveredLink>
+                  <HoveredLink href="/features/invoicing">Invoicing</HoveredLink>
+                  <HoveredLink href="/features/reporting">Reporting</HoveredLink>
                </div>
             </MenuItem>
-            <Link href={"/const-us"}>
+            <Link href={"/contact-us"}>
                <MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem>
             </Link>
-
-            {/* // TODO :: is ka bad extra ha is ko bad ma remove kr dana  */}
-
-            <MenuItem setActive={setActive} active={active} item="Products">
-               <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-                  <ProductItem
-                     title="Algochurn"
-                     href="https://algochurn.com"
-                     src="https://assets.aceternity.com/demos/algochurn.webp"
-                     description="Prepare for tech interviews like never before."
-                  />
-                  <ProductItem
-                     title="Tailwind Master Kit"
-                     href="https://tailwindmasterkit.com"
-                     src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                     description="Production ready Tailwind css components for your next project"
-                  />
-                  <ProductItem
-                     title="Moonbeam"
-                     href="https://gomoonbeam.com"
-                     src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                     description="Never write from scratch again. Go from idea to blog in minutes."
-                  />
-                  <ProductItem
-                     title="Rogue"
-                     href="https://userogue.com"
-                     src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                     description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-                  />
-               </div>
-            </MenuItem>
          </Menu>
       </div>
    );

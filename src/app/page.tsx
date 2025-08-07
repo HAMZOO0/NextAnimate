@@ -5,7 +5,7 @@ import { StickyScrollReveal } from "@/components/ScrollView";
 import { InfiniteMovingCardsComponent } from "@/components/InfiniteMovingCards";
 import { UpcomingWebinars } from "@/components/UpCommingWebinar";
 import { WavyBackgroundComponent } from "@/components/WavyBackground";
-import { AnimatedTooltipComponent } from "@/components/TooTip";
+import { ThreeDCard } from "@/components/3d-cardComponent";
 
 export default function Home() {
    return (
@@ -18,7 +18,7 @@ export default function Home() {
          <InfiniteMovingCardsComponent />
          <UpcomingWebinars />
          <WavyBackgroundComponent />
-         {/* <AnimatedTooltipComponent /> */}
+         <ThreeDCard />
       </div>
    );
 }

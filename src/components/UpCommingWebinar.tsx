@@ -1,54 +1,49 @@
 "use client";
 import Link from "next/link";
 import { HoverEffect } from "../components/ui/card-hover-effect";
-import { title } from "process";
 
 export function UpcomingWebinars() {
-   const featuredWebinars = [
+   const featuredSuccessStories = [
       {
-         id: 6,
-
-         title: "Understanding Music Theory",
-         description: "Dive deep into the fundamentals of music theory and enhance your musical skills.",
-         slug: "understanding-music-theory",
+         id: 1,
+         title: "Streamlined Onboarding for New Clients",
+         description: "How our platform helped a marketing agency reduce client onboarding time by 50%.",
+         slug: "streamlined-onboarding",
          isFeatured: true,
       },
       {
-         id: 5,
-
-         title: "The Art of Songwriting",
-         description: "Learn the craft of songwriting from experienced musicians and songwriters.",
-         slug: "the-art-of-songwriting",
-         isFeatured: true,
-      },
-      {
-         id: 4,
-
-         title: "Mastering Your Instrument",
-         description: "Advanced techniques to master your musical instrument of choice.",
-         slug: "mastering-your-instrument",
+         id: 2,
+         title: "Improved Project Delivery for a Tech Startup",
+         description: "Discover how a tech startup used our tools to deliver projects 20% faster.",
+         slug: "improved-project-delivery",
          isFeatured: true,
       },
       {
          id: 3,
-         title: "Music Production Essentials",
-         description: "Get started with music production with this comprehensive overview.",
-         slug: "music-production-essentials",
-         isFeatured: true,
-      },
-      // Added two more webinars
-      {
-         id: 2,
-         title: "Live Performance Techniques",
-         description: "Enhance your live performance skills with expert tips and strategies.",
-         slug: "live-performance-techniques",
+         title: "Enhanced Client Communication for a Design Studio",
+         description: "Learn how a design studio achieved 90% client satisfaction with our communication features.",
+         slug: "enhanced-communication",
          isFeatured: true,
       },
       {
-         id: 1,
-         title: "Digital Music Marketing",
-         description: "Learn how to promote your music effectively in the digital age.",
-         slug: "digital-music-marketing",
+         id: 4,
+         title: "Automated Invoicing for a Freelance Network",
+         description: "See how a freelance network automated their invoicing process, saving countless hours.",
+         slug: "automated-invoicing",
+         isFeatured: true,
+      },
+      {
+         id: 5,
+         title: "Centralized File Management for a Consulting Firm",
+         description: "Explore how a consulting firm centralized their documents, improving collaboration and access.",
+         slug: "centralized-file-management",
+         isFeatured: true,
+      },
+      {
+         id: 6,
+         title: "Real-time Reporting for a Software Development Team",
+         description: "Understand how a software team gained real-time insights into project progress and profitability.",
+         slug: "real-time-reporting",
          isFeatured: true,
       },
    ];
@@ -57,29 +52,29 @@ export function UpcomingWebinars() {
       <div className="p-12 bg-gray-900">
          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center">
-               <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">FEATURED WEBINARS</h2>
+               <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">Success Stories</h2>
                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-                  Enhance Your Musical Journey
+                  See How Our Clients Succeed
                </p>
             </div>
 
             <div className="mt-10">
                <HoverEffect
-                  items={featuredWebinars.map((webinar) => ({
-                     id: webinar.id,
-                     title: webinar.title,
-                     description: webinar.description,
-                     link: "/",
+                  items={featuredSuccessStories.map((story) => ({
+                     id: story.id,
+                     title: story.title,
+                     description: story.description,
+                     link: `/success-stories/${story.slug}`,
                   }))}
                />
             </div>
 
             <div className="mt-10 text-center">
                <Link
-                  href={"/"}
+                  href={"/success-stories"}
                   className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
                >
-                  View All webinars
+                  View All Success Stories
                </Link>
             </div>
          </div>
